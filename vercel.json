@@ -1,4 +1,28 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "dvai.tech"
+        }
+      ],
+      "destination": "https://www.dvai.tech",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "dvai.tech"
+        }
+      ],
+      "destination": "https://www.dvai.tech/$1",
+      "permanent": true
+    }
+  ]
 }
