@@ -129,3 +129,10 @@ footer {
     margin-left: 0;
   }
 }
+
+.btn.disabled {
+  background: #2a2a36;
+  color: var(--text-muted);
+  border: 1px solid var(--border-soft);
+  cursor: not-allowed;
+}
